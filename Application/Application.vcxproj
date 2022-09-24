@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Code_Events\SubSystem\Code_Style.h" />
+    <ClInclude Include="Source\System\Window\RuntimeToolBar.h" />
+    <ClInclude Include="Source\3D\Renderer\Mesh\Tools\MeshQuickSetup.h" />
+    <ClInclude Include="Source\System\Window\PropertiesPanel.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\System\Window\GameCompiler.h" />
+    <ClInclude Include="Source\System\Window\OpenSaveProj_W.h" />
+    <ClInclude Include="Source\System\Project\ProjectLoader.h" />
+    <ClInclude Include="Source\3D\Renderer\Shaders\ShadersCompilers.h" />
+    <ClInclude Include="Source\3D\Renderer\Camera\Camera.h" />
+    <ClInclude Include="Source\3D\Renderer\FrameBuffer\FrameBuffer.h" />
+    <ClInclude Include="Source\3D\Renderer\Renderer.h" />
+    <ClInclude Include="Source\3D\Renderer\Textures\stb_image.h" />
+    <ClInclude Include="Source\3D\Renderer\Textures\TP_Textures.h" />
+    <ClInclude Include="Source\Core\Logging\Events.h" />
+    <ClInclude Include="Source\Core\Processor_Core.h" />
+    <ClInclude Include="Source\Event\Events.h" />
+    <ClInclude Include="Source\Event\EventSystem.h" />
+    <ClInclude Include="Source\System\Window\ContentBrowserPanel.h" />
+    <ClInclude Include="Source\System\Window\StarterEditor.h" />
+    <ClInclude Include="Source\TeraPlay.h" />
+    <ClInclude Include="ThirdParty\imgui\imconfig.h" />
+    <ClInclude Include="ThirdParty\imgui\imgui.h" />
+    <ClInclude Include="ThirdParty\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="ThirdParty\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="ThirdParty\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="ThirdParty\imgui\imgui_internal.h" />
+    <ClInclude Include="ThirdParty\imgui\imstb_rectpack.h" />
+    <ClInclude Include="ThirdParty\imgui\imstb_textedit.h" />
+    <ClInclude Include="ThirdParty\imgui\imstb_truetype.h" />
+    <ClInclude Include="ThirdParty\imgui\stb_rect_pack.h" />
+    <ClInclude Include="ThirdParty\imgui\stb_textedit.h" />
+    <ClInclude Include="ThirdParty\imgui\stb_truetype.h" />
+    <ClInclude Include="Source\3D\Renderer\Mesh\TP_VertexBuffers\VertexBuffers.h" />
+    <ClInclude Include="Source\System\Window\Viewports.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Code_Events\SubSystem\Code_Style.cpp" />
+    <ClCompile Include="Source\System\Window\RuntimeToolBar.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Mesh\Tools\MeshQuickSetup.cpp" />
+    <ClCompile Include="Source\System\Window\PropertiesPanel.cpp" />
+    <ClCompile Include="Source\System\Window\GameCompiler.cpp" />
+    <ClCompile Include="Source\System\Window\OpenSaveProj_W.cpp" />
+    <ClCompile Include="Source\System\Project\ProjectLoader.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Camera\RuntimeCamera.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Shaders\ShadersCompilers.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Camera\TP_Scene_Camera.cpp" />
+    <ClCompile Include="Source\3D\Renderer\FrameBuffer\FrameBuffer.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Textures\stb_image.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Textures\TP_Textures.cpp" />
+    <ClCompile Include="Source\Event\EventConsole.cpp" />
+    <ClCompile Include="Source\System\Init\TeraPlay_WindowInit.cpp" />
+    <ClCompile Include="Source\System\Window\ContentBrowserPanel.cpp" />
+    <ClCompile Include="Source\System\Window\StarterEditor.cpp" />
+    <ClCompile Include="ThirdParty\imgui\imgui.cpp" />
+    <ClCompile Include="ThirdParty\imgui\imgui_draw.cpp" />
+    <ClCompile Include="ThirdParty\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="ThirdParty\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="ThirdParty\imgui\imgui_tables.cpp" />
+    <ClCompile Include="ThirdParty\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Source\3D\Renderer\Mesh\TP_VertexBuffers\VertexBuffers.cpp" />
+    <ClCompile Include="Source\System\Window\Viewports.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\Base.frag" />
+    <None Include="Resources\Shaders\Base.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Engine\Resources\icon\Icon.ico" />
+    <Image Include="Resources\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Application.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{609f4d37-467b-4ea6-aad1-c034c1eefbee}</ProjectGuid>
+    <RootNamespace>Application</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Engine\Build\$(Platform)</OutDir>
+    <IntDir>$(SolutionDir)\Engine\Build\$(Platform)\intermediate</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Engine\Build\$(Platform)</OutDir>
+    <IntDir>$(SolutionDir)\Engine\Build\$(Platform)\intermediate</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;TP_PLATFORM_WINDOWS;TP_BUILD_DLL;WIN32;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application\ThirdParty\OpenGL\GLFW\include;$(SolutionDir)Application\Source;$(SolutionDir)Application\ThirdParty\OpenGL\GLEW\include;$(SolutionDir)Application\ThirdParty\imgui;$(SolutionDir)Application\ThirdParty\assimp\include;$(SolutionDir)Application\ThirdParty\OpenGL\GLM;$(SolutionDir)\GameCompiler;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Application\ThirdParty\OpenGL\GLFW\lib-vc2015;$(SolutionDir)Application\ThirdParty\OpenGL\GLEW\lib\Release\Win32;$(SolutionDir)Application\ThirdParty\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc140-mt.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;TP_PLATFORM_WINDOWS;TP_BUILD_DLL;WIN32;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application\ThirdParty\OpenGL\GLFW\include;$(SolutionDir)Application\Source;$(SolutionDir)Application\ThirdParty\OpenGL\GLEW\include;$(SolutionDir)Application\ThirdParty\imgui;$(SolutionDir)Application\ThirdParty\assimp\include;$(SolutionDir)Application\ThirdParty\OpenGL\GLM;$(SolutionDir)\GameCompiler;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Application\ThirdParty\OpenGL\GLFW\lib-vc2015;$(SolutionDir)Application\ThirdParty\OpenGL\GLEW\lib\Release\Win32;$(SolutionDir)Application\ThirdParty\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc140-mt.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
